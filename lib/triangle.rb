@@ -14,10 +14,10 @@ class Triangle
 
   class TriangleError < StandardError
   end
-  
+
   def kind
     if legal?
-      binding.pry 
+      binding.pry
       if @triangle_sides[0] == @triangle_sides[1] && @triangle_sides[1] == @triangle_sides[2]
         :equilateral
       elsif @triangle_sides[0] == @triangle_sides[1] || @triangle_sides[1] == @triangle_sides[2] || @triangle_sides[0] == @triangle_sides[2]
