@@ -9,7 +9,7 @@ class Triangle
   end
 
   def legal?
-    @triangle_sides.all {|side| side > 0}
+    @triangle_sides.all? {|side| side > 0}
   end
 
   class TriangleError < StandardError
