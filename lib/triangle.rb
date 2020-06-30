@@ -16,7 +16,6 @@ class Triangle
   end
 
   def kind
-    binding.pry
     if legal?
       if @triangle_sides[0] == @triangle_sides[1] && @triangle_sides[1] == @triangle_sides[2]
         :equilateral
